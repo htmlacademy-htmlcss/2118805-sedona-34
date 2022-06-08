@@ -89,25 +89,23 @@
       <section class="booking">
         <h2 class="booking-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" form="date-form" name="search for hotels" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button type="button" form="date-form" name="search for hotels">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         <!--проверь, пожалуйста, строку выше и связь с формой ниже, саму форму тоже тут у меня были трудности-->
       </section>
-
-
       <section class="date">
-        <form class="date-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="date-form" id="date-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="date-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
           <button class="close" type="button">x</button>
           <p class="date-form-date-in">
             <label class="form-label" for="form-date-in"><b>Дата заезда</b></label>
-            <input type="text" id="form-date-in" name="form-date-in" placeholder="01.01.2022" min="08.06.2022" max="01.01.2072">
+            <input type="text" id="form-date-in" name="form-date-in" placeholder="01.01.2022">
             <button class="visually-hidden" name="calendar">Календарь</button>
           </p>
           <p>Мы не можем отправить вас в прошлое.</p>
           <!--как-то нужно выставить минимальный ввод сегодняшней датой, чтобы, в случае введенной даты заезда более ранней, вылазило окно "Мы не можем отправить вас в прошлое." я не могу понять как это реализовать-->
           <p class="date-form-date-out">
             <label class="form-label" for="form-date-out"><b>Дата выезда</b></label>
-            <input type="text" id="form-date-out" name="form-date-out" placeholder="01.01.2022" min="08.06.2022" max="01.01.2072">
+            <input type="text" id="form-date-out" name="form-date-out" placeholder="01.01.2022">
             <button class="visually-hidden" name="calendar">Календарь</button>
           </p>
           <p>На эти даты есть свободные номера. Пока есть.</p>
@@ -143,6 +141,7 @@
     </main>
     <footer>
       <section>
+        <h2 class="visually-hidden">Cоц.сети</h2>
         <ul class="footer-list">
           <li class="vk-item">
             <a class="link" href="https://vk.com/htmlacademy">
@@ -161,11 +160,12 @@
           </li>
         </ul>
       </section>
-      <adress class="contacts">
+      <section class="contacts">
         <h2 class="visually-hidden">Телефон</h2>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </adress>
+      </section>
       <section>
+        <h2 class="visually-hidden">Сайт</h2>
         <p class="html academy"><span class="visually-hidden">.html academy </span> <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html<br> academy</a></p>
       </section>
     </footer>
