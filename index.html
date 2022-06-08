@@ -36,9 +36,10 @@
       </nav>
     </header>
     <main class="main-index">
+      <h1 class="visually-hidden">СЕДОНА</h1>
       <img class="welcome-logo" src="" alt="Welcome to Sedona">
-      <h1>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
-      </h1>
+      <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+      </h2>
       <p class="motto">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       <section class="advantages">
         <h2 class="visually-hidden">Седона предлагает</h2>
@@ -88,9 +89,46 @@
       <section class="booking">
         <h2 class="booking-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button search for hotels" href="form">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
-        <---тут не знаю как ссылку на форму сделать--->
+        <button type="button" form="date-form" name="search for hotels" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <!--проверь, пожалуйста, строку выше и связь с формой ниже, саму форму тоже тут у меня были трудности-->
       </section>
+
+
+      <section class="date">
+        <form class="date-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="date-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          <button class="close" type="button">x</button>
+          <p class="date-form-date-in">
+            <label class="form-label" for="form-date-in"><b>Дата заезда</b></label>
+            <input type="text" id="form-date-in" name="form-date-in" placeholder="01.01.2022" min="08.06.2022" max="01.01.2072">
+            <button class="visually-hidden" name="calendar">Календарь</button>
+          </p>
+          <p>Мы не можем отправить вас в прошлое.</p>
+          <!--как-то нужно выставить минимальный ввод сегодняшней датой, чтобы, в случае введенной даты заезда более ранней, вылазило окно "Мы не можем отправить вас в прошлое." я не могу понять как это реализовать-->
+          <p class="date-form-date-out">
+            <label class="form-label" for="form-date-out"><b>Дата выезда</b></label>
+            <input type="text" id="form-date-out" name="form-date-out" placeholder="01.01.2022" min="08.06.2022" max="01.01.2072">
+            <button class="visually-hidden" name="calendar">Календарь</button>
+          </p>
+          <p>На эти даты есть свободные номера. Пока есть.</p>
+          <!--Похожая ситуация с "На эти даты есть свободные номера. Пока есть.". Как прописать условие, чтобы эта строка выводилась? Или пока мне рано в целом за это думать?-->
+          <p class="date-form-adults">
+            <label for="date-form-adults-qty">
+              <b>Взрослые:</b>
+            </label>
+            <input type="text" id="date-form-adults-qty" name="date-form-adults-qty" value="2">
+          </p>
+          <p class="date-form-chld">
+            <label for="date-form-chld-qty">
+              <b>Дети:</b>
+            </label>
+            <button class="button-info" type="button"> Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+            </button>
+            <input type="text" id="date-form-chld-qty" name="date-form-chld-qty" value="1">
+          </p>
+          <button class="button" type="submit">НАЙТИ</button>
+        </form>
+      </section> 
       <section class="subscribe">
         <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -107,26 +145,26 @@
       <section>
         <ul class="footer-list">
           <li class="vk-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
           <li class="telegram-item">
-            <a class="button" href="https://t.me/htmlacademy">
+            <a class="link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="youtube-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
       </section>
-      <section class="contacts">
+      <adress class="contacts">
         <h2 class="visually-hidden">Телефон</h2>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
+      </adress>
       <section>
         <p class="html academy"><span class="visually-hidden">.html academy </span> <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html<br> academy</a></p>
       </section>
