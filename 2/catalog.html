@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Страница каталога</title>
+    <base href="https://htmlacademy-htmlcss.github.io/2118805-sedona-34/2/">
+</head>
+  <body>
+    <header class="page-header">
+        <nav class="navigation">
+          <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" alt="labe-sedona"." src=""></a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Поиск
+                </span></a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Мне нравится
+                </span></a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+          <h1><b>Гостиницы Седоны</b></h1>
+          <a class="home-link" href="index.html"><span class="visually-hidden">На главную</span></a>&gt;
+          <a class="hotel-link" href="catalog.html">Гостиницы</a>
+          <form class="hotel-properties"action="https://echo.htmlacademy.ru/" method="post">
+            <p>Инфраструктура:</p>
+              <label> <input type="checkbox" name="hotel-inf" value="sw_pool" checked> Бассейн</label> <br> 
+              <label> <input type="checkbox" name="hotel-inf" value="parking" checked> Парковка</label> <br>
+              <label> <input type="checkbox" name="hotel-inf" value="wi-fi" > Wi-Fi</label>
+            <p>Тип жилья:</p>
+              <label> <input type="radio" name="hotel-type" value="hotel" checked> Гостиница</label> <br> 
+              <label> <input type="radio" name="hotel-type" value="motel" > Мотель</label> <br>
+              <label> <input type="radio" name="hotel-type" value="apartment" > Апартаменты</label>
+
+            <p>Стоимость, &#8381:</p>
+            <form>
+              <p> <label for="price-low" value="0">от:
+                <input type="number" value="0" id="price-low" name="price-low" placeholder="от:"></label>
+              <!--не получается вставить "от:" внутрь окошка-->  
+              </p>
+              <p> <label for="price-up" value="0">от:
+                <input type="number" value="0" id="price-up" name="price-up" placeholder="до:"></label>
+              <!--не получается вставить "до:" внутрь окошка-->  
+              </p>
+      </main>
+      <footer>
+        <section>
+          <h2 class="visually-hidden">Cоц.сети</h2>
+          <ul class="footer-list">
+            <li class="vk-item">
+              <a class="link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+            <li class="telegram-item">
+              <a class="link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="youtube-item">
+              <a class="link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="contacts">
+          <h2 class="visually-hidden">Телефон</h2>
+            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </section>
+        <section>
+          <h2 class="visually-hidden">Сайт</h2>
+          <p class="html academy"><span class="visually-hidden">.html academy </span> <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html<br> academy</a></p>
+        </section>
+      </footer>
+  </body>
+</html>

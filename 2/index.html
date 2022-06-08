@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона &mdash; прекрасный городок в Аризоне</title>
+    <base href="https://htmlacademy-htmlcss.github.io/2118805-sedona-34/2/">
+</head>
+  <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" alt="labe-sedona"." src="">
+        </a>
+        <img class="label-sedona" src="" alt="labe-sedona">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск
+              </span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Мне нравится
+              </span></a>
+          </li>
+          <li class="navigation-item">
+            <button type="button" form="date-form" name="search for hotels">ХОЧУ СЮДА!</button>
+            <!--<a class="navigation-link" href="#">ХОЧУ СЮДА!</a> Кнопку выше хочу связать с формой-->
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <h1 class="main-welcome">WELCOME</h1> 
+        <p class="main-moto"> &mdash;<i>to the gorgeous</i>&mdash;</p>
+        <h1 class="main-name"><strong>SEDONA</strong></h1>
+        <p class="hard-moto">&mdash;<i>"Because the Grand Canyon sucks!"</i>&mdash;</p>
+      <img class="welcome-logo" src="" alt="Welcome to Sedona">
+      <h2>СЕДОНА &mdash; НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+      </h2>
+      <p class="motto">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <section class="advantages">
+        <h2 class="visually-hidden">Седона предлагает</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-title">Настоящий<br> городок</h3>
+            <p class="advantages-description">-№1-</p>
+            <p class="advantages-description">Седона &mdash; не аттракцион<br> для туристов, там течет<br> своя жизнь</p>
+          </li> 
+          <li class="advantages-item">
+            <img class="logo" src="" alt="tiny_home">
+            <h3 class="advantages-title">Жильё</h3>
+            <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+          </li> 
+          <li class="advantages-item">
+            <img class="logo" src="" alt="tiny_burger">
+            <h3 class="advantages-title">Еда</h3>
+            <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+          </li> 
+          <li class="advantages-item">
+            <img class="logo" src="" alt="tiny_giftbox">
+            <h3 class="advantages-title">Сувениры</h3>
+            <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
+            <p class="advantages-description">-№2-</p>
+            <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Небольшая<br> площадь</h3>
+            <p class="advantages-description">-№3-</p>
+            <p class="advantages-description">Все достопримечательности<br> находятся очень близко</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Красивая<br> дорога</h3>
+            <p class="advantages-description">-№4-</p>
+            <p class="advantages-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Мало<br> туристов</h3>
+            <p class="advantages-description">-№5-</p>
+            <p class="advantages-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
+          </li>
+        </ul> 
+      </section>
+      <section class="booking">
+        <h2 class="booking-title">Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="button" form="date-form" name="search for hotels">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <!--проверь, пожалуйста, строку выше(ее я продублировал в кнопку "хочу сюда"), связь с формой ниже и саму форму тоже, тут у меня были трудности-->
+      </section>
+      <section class="date">
+        <form class="date-form" id="date-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="date-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          <button class="close" type="button">x</button>
+          <p class="date-form-date-in">
+            <label class="form-label" for="form-date-in"><b>Дата заезда</b></label>
+            <input type="text" id="form-date-in" name="form-date-in" placeholder="01.01.2022">
+            <button class="visually-hidden" name="calendar">Календарь</button>
+          </p>
+          <p>Мы не можем отправить вас в прошлое.</p>
+          <!--как-то нужно выставить минимальный ввод сегодняшней датой, чтобы, в случае введенной даты заезда более ранней, вылазило окно "Мы не можем отправить вас в прошлое." я не могу понять как это реализовать-->
+          <p class="date-form-date-out">
+            <label class="form-label" for="form-date-out"><b>Дата выезда</b></label>
+            <input type="text" id="form-date-out" name="form-date-out" placeholder="01.01.2022">
+            <button class="visually-hidden" name="calendar">Календарь</button>
+          </p>
+          <p>На эти даты есть свободные номера. Пока есть.</p>
+          <!--Похожая ситуация с "На эти даты есть свободные номера. Пока есть.". Как прописать условие, чтобы эта строка выводилась? Или пока мне рано в целом за это думать?-->
+          <p class="date-form-adults">
+            <label for="date-form-adults-qty">
+              <b>Взрослые:</b>
+            </label>
+            <input type="text" id="date-form-adults-qty" name="date-form-adults-qty" value="2">
+          </p>
+          <p class="date-form-chld">
+            <label for="date-form-chld-qty">
+              <b>Дети:</b>
+            </label>
+            <button class="button-info" type="button"> Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+            </button>
+            <input type="text" id="date-form-chld-qty" name="date-form-chld-qty" value="1">
+          </p>
+          <button class="button" type="submit">НАЙТИ</button>
+        </form>
+      </section> 
+      <section class="subscribe">
+        <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="subscribe-email" class="visually-hidden">Ваш e-mail</label>
+          <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email">
+          <button class="button subscribe-button" type="submit">
+            <span>Записаться</span>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <h2 class="visually-hidden">Cоц.сети</h2>
+        <ul class="footer-list">
+          <li class="vk-item">
+            <a class="link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li class="telegram-item">
+            <a class="link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="youtube-item">
+            <a class="link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Телефон</h2>
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Сайт</h2>
+        <p class="html academy"><span class="visually-hidden">.html academy </span> <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html<br> academy</a></p>
+      </section>
+    </footer>
+  </body>
+</html>
