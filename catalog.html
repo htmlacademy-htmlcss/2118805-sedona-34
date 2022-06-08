@@ -8,7 +8,7 @@
     <header class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="labe-sedona"." src=""></a>
+          <img class="page-header-logo" alt="labe-sedona" src=""></a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -40,9 +40,10 @@
       </header>
       <main>
           <h1><b>Гостиницы Седоны</b></h1>
+          <img class="background-hotels" src="" alt="Sedona background">
           <a class="home-link" href="index.html"><span class="visually-hidden">На главную</span></a>&gt;
           <a class="hotel-link" href="catalog.html">Гостиницы</a>
-          <form class="hotel-properties"action="https://echo.htmlacademy.ru/" method="post">
+          <form class="hotel-properties" action="https://echo.htmlacademy.ru/" method="post">
             <p>Инфраструктура:</p>
               <label> <input type="checkbox" name="hotel-inf" value="sw_pool" checked> Бассейн</label> <br> 
               <label> <input type="checkbox" name="hotel-inf" value="parking" checked> Парковка</label> <br>
@@ -51,19 +52,122 @@
               <label> <input type="radio" name="hotel-type" value="hotel" checked> Гостиница</label> <br> 
               <label> <input type="radio" name="hotel-type" value="motel" > Мотель</label> <br>
               <label> <input type="radio" name="hotel-type" value="apartment" > Апартаменты</label>
-            <p>Стоимость, &#8381:</p>
-            <form>
-              <p> <label for="price-low" value="0">от:
+            <p>Стоимость, ₽: </p>
+            <p> <label for="price-low">от:
                 <input type="number" value="0" id="price-low" name="price-low" placeholder="от:"></label>
               <!--не получается вставить "от:" внутрь окошка-->  
-              </p>
-              <p> <label for="price-up" value="0">от:
-                <input type="number" value="0" id="price-up" name="price-up" placeholder="до:"></label>
+            </p>
+            <p> <label for="price-up">от:
+              <input type="number" value="0" id="price-up" name="price-up" placeholder="до:"></label>
               <!--не получается вставить "до:" внутрь окошка-->  
-              </p>
-              <button class="button" type="submit">ПРИМЕНИТЬ</button>
+            </p>
+              <button class="button" type="submit">ПРИМЕНИТЬ</button><br>
               <button class="button" type="reset">Сбросить</button>
             </form>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="expensive">Сначала дорогое</option>
+              <option value="cheap">Сначала дешёвое</option>
+              <option value="popular">Сначала популярное</option>
+            </select>
+            <a class="button-table" href="#" >
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button-slideshow" href="#">
+              <span class="visually-hidden">Показать страницами</span>
+            </a>
+            <a class="button-list" href="#">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+            <ul class="hotel-list">
+              <li class="hotel-card">
+                <a class="hotel-card-link" href="#">
+                  <img class="hotel-card-image" src="" alt="">
+                  <h3 class="hotel-card-title"><b>Amara Resort & Spa</b></h3>
+                </a>
+                <p>Гостиница </p> <p>От 4000 ₽</p>
+                <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
+                <button class="button" type="submit">
+                  В ИЗБРАННОЕ
+                </button>
+                <img class="stars" src="" alt="hotel stars">
+                <span class="visually-hidden">4 звезды</span>
+                <p>РЕЙТИНГ: 8,5</p>
+              </li>
+              <li class="hotel-card">
+                <a class="hotel-card-link" href="#">
+                  <img class="hotel-card-image" src="" alt="">
+                  <h3 class="hotel-card-title"><b>Villas at Poco Diablo</b></h3>
+                </a>
+                <p>Гостиница </p> <p>От 5000 ₽</p>
+                <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
+                <button class="button" type="submit">
+                  В ИЗБРАННОЕ
+                </button>
+                <img class="stars" src="" alt="hotel stars">
+                <span class="visually-hidden">4 звезды</span>
+                <p>РЕЙТИНГ: 9,2</p>
+              </li>
+              <li class="hotel-card">
+                <a class="hotel-card-link" href="#">
+                  <img class="hotel-card-image" src="" alt="">
+                  <h3 class="hotel-card-title"><b>Desert Quail Inn</b></h3>
+                </a>
+                <p>Гостиница </p> <p>От 2500 ₽</p>
+                <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
+                <button class="button" type="submit">
+                  В ИЗБРАННОЕ
+                </button>
+                <img class="stars" src="" alt="hotel stars">
+                <span class="visually-hidden">3 звезды</span>
+                <p>РЕЙТИНГ: 6,9</p>
+              </li>
+              <li class="hotel-card">
+                <a class="hotel-card-link" href="#">
+                  <img class="hotel-card-image" src="" alt="">
+                  <h3 class="hotel-card-title"><b>GreenTree Inn</b></h3>
+                </a>
+                <p>Гостиница </p> <p>От 1500 ₽</p>
+                <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
+                <button class="button" type="submit">
+                  В ИЗБРАННОЕ
+                </button>
+                <img class="stars" src="" alt="hotel stars">
+                <span class="visually-hidden">2 звезды</span>
+                <p>РЕЙТИНГ: 5,0</p>
+              </li>
+            </ul>
+          <h3 class="visually-hidden">Пагинация</h3>
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+            <p class="select-qty">Гостиниц на сайте
+              <select class="select-qty" aria-label="Количество">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </p>
       </main>
       <footer>
         <section>
