@@ -8,7 +8,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="labe-sedona" src="">
+          <img class="page-header-logo" alt="Логотип Седона" src="">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -24,8 +24,8 @@
         <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск
-              </span></a>
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -33,42 +33,37 @@
               </span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">ХОЧУ СЮДА!</a>
+            <a class="navigation-link" href="catalog.html">хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
-      <h1 class="main-title"><span class="visually-hidden">WELCOME</span></h1> 
-      <img class="welcome-logo" src="" alt="Welcome to Sedona">
-      <img class="sedona-logo" src="" alt="Sedona with tagline">
-      <img class="background-logo" src="" alt="Sedona background">
-      <h2>СЕДОНА &mdash; НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+      <h1 class="main-title"><span class="visually-hidden">welcome</span></h1> 
+        <img class="background-logo" src="" alt="Sedona background">
+      <h2>Седона &mdash; небольшой городок в аризоне,<br> заслуживающий большего!
       </h2>
-      <p class="motto">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <p class="motivation">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       <section class="advantages">
         <h2 class="visually-hidden">Седона предлагает</h2>
         <ol class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий<br> городок</h3>
-            <p class="advantages-description">-№1-</p>
-            <p class="advantages-description">Седона &mdash; не аттракцион<br> для туристов, там течет<br> своя жизнь</p>
-            <img class="picture" src="" alt="hotels">
+              <p class="advantages-description">-№1-</p>
+              <p class="advantages-description">Седона &mdash; не аттракцион<br> для туристов, там течет<br> своя жизнь</p>
+                <img class="picture" src="" alt="hotels">
             <ul>
               <li class="advantages-item">
-                <img class="logo" src="" alt="tiny_home">
                 <h3 class="advantages-title">Жильё</h3>
-                <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+                  <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
               </li>
               <li class="advantages-item">
-                <img class="logo" src="" alt="tiny_burger">
                 <h3 class="advantages-title">Еда</h3>
-                <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+                  <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
               </li> 
               <li class="advantages-item">
-                <img class="logo" src="" alt="tiny_giftbox">
                 <h3 class="advantages-title">Сувениры</h3>
-                <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+                  <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
               </li>
             </ul>
           </li> 
@@ -97,28 +92,25 @@
       </section>
       <section class="booking">
         <h2 class="booking-title">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="popup" type="button" onclick="date-form" name="search for hotels">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-        <!--потом проверить кнопку и связь-->
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="popup" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="date">
         <form class="date-form" id="date-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="date-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-          <button class="close" type="button">x</button>
+          <button class="close" type="button"><span class="visually-hidden">закрыть</span></button>
           <p class="date-form-date-in">
             <label class="form-label" for="form-date-in"><b>Дата заезда</b></label>
             <input type="text" id="form-date-in" name="form-date-in" placeholder="01.01.2022">
             <button class="visually-hidden" name="calendar">Календарь</button>
           </p>
           <p>Мы не можем отправить вас в прошлое.</p>
-          <!--как-то нужно выставить минимальный ввод сегодняшней датой, чтобы, в случае введенной даты заезда более ранней, вылазило окно "Мы не можем отправить вас в прошлое." я не могу понять как это реализовать-->
           <p class="date-form-date-out">
             <label class="form-label" for="form-date-out"><b>Дата выезда</b></label>
             <input type="text" id="form-date-out" name="form-date-out" placeholder="01.01.2022">
             <button class="visually-hidden" name="calendar">Календарь</button>
           </p>
           <p>На эти даты есть свободные номера. Пока есть.</p>
-          <!--Похожая ситуация с "На эти даты есть свободные номера. Пока есть.". Как прописать условие, чтобы эта строка выводилась? Или пока мне рано в целом за это думать?-->
           <p class="date-form-adults">
             <label for="date-form-adults-qty">
               <b>Взрослые:</b>
@@ -133,19 +125,16 @@
             </button>
             <input type="text" id="date-form-chld-qty" name="date-form-chld-qty" value="1">
           </p>
-          <button class="button" type="submit">НАЙТИ</button>
+          <button class="button" type="submit">Найти</button>
         </form>
       </section> 
       <section class="subscribe">
-        <img class="background-subscribe" src="" alt="Sedona background">
-        <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscribe-email" class="visually-hidden">Ваш e-mail</label>
-          <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email">
-          <button class="button subscribe-button" type="submit">
-            <span>Записаться</span>
-          </button>
+            <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email">
+          <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -153,18 +142,18 @@
       <section>
         <h2 class="visually-hidden">Cоц.сети</h2>
         <ul class="footer-list">
-          <li class="vk-item">
-            <a class="link" href="https://vk.com/htmlacademy">
+          <li class="link">
+            <a class="vk-item" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
-          <li class="telegram-item">
-            <a class="link" href="https://t.me/htmlacademy">
+          <li class="link">
+            <a class="telegram-item" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
-          <li class="youtube-item">
-            <a class="link" href="https://www.youtube.com/user/htmlacademyru">
+          <li class="link">
+            <a class="youtube-item" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
@@ -176,7 +165,7 @@
       </section>
       <section>
         <h2 class="visually-hidden">Сайт</h2>
-        <p class="html academy"><span class="visually-hidden">.html academy </span> <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html<br> academy</a></p>
+        <p class="html academy"><a><img src="" alt=".html academy"></a></p>
       </section>
     </footer>
   </body>
