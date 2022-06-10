@@ -2,11 +2,171 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона &mdash; прекрасный городок в Аризоне</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" alt="Логотип Седона" src="">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Мне нравится
+              </span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <h1 class="main-title"><span class="visually-hidden">welcome</span></h1> 
+        <img class="background-logo" src="" alt="Sedona background">
+      <h2>Седона &mdash; небольшой городок в аризоне,<br> заслуживающий большего!
+      </h2>
+      <p class="motivation">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <section class="advantages">
+        <h2 class="visually-hidden">Седона предлагает</h2>
+        <ol class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-title">Настоящий<br> городок</h3>
+              <p class="advantages-description">-№1-</p>
+              <p class="advantages-description">Седона &mdash; не аттракцион<br> для туристов, там течет<br> своя жизнь</p>
+                <img class="picture" src="" alt="hotels">
+            <ul>
+              <li class="advantages-item">
+                <h3 class="advantages-title">Жильё</h3>
+                  <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+              </li>
+              <li class="advantages-item">
+                <h3 class="advantages-title">Еда</h3>
+                  <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+              </li> 
+              <li class="advantages-item">
+                <h3 class="advantages-title">Сувениры</h3>
+                  <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+              </li>
+            </ul>
+          </li> 
+          <li class="advantages-item">
+            <img class="picture" src="" alt="canyon">
+            <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
+            <p class="advantages-description">-№2-</p>
+            <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Небольшая<br> площадь</h3>
+            <p class="advantages-description">-№3-</p>
+            <p class="advantages-description">Все достопримечательности<br> находятся очень близко</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Красивая<br> дорога</h3>
+            <p class="advantages-description">-№4-</p>
+            <p class="advantages-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Мало<br> туристов</h3>
+            <p class="advantages-description">-№5-</p>
+            <p class="advantages-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
+          </li>
+        </ol> 
+      </section>
+      <section class="booking">
+        <h2 class="booking-title">Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="popup" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+      <section class="date">
+        <form class="date-form" id="date-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="date-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          <button class="close" type="button"><span class="visually-hidden">закрыть</span></button>
+          <p class="date-form-date-in">
+            <label class="form-label" for="form-date-in"><b>Дата заезда</b></label>
+            <input type="text" id="form-date-in" name="form-date-in" placeholder="01.01.2022">
+            <button class="visually-hidden" name="calendar">Календарь</button>
+          </p>
+          <p>Мы не можем отправить вас в прошлое.</p>
+          <p class="date-form-date-out">
+            <label class="form-label" for="form-date-out"><b>Дата выезда</b></label>
+            <input type="text" id="form-date-out" name="form-date-out" placeholder="01.01.2022">
+            <button class="visually-hidden" name="calendar">Календарь</button>
+          </p>
+          <p>На эти даты есть свободные номера. Пока есть.</p>
+          <p class="date-form-adults">
+            <label for="date-form-adults-qty">
+              <b>Взрослые:</b>
+            </label>
+            <input type="text" id="date-form-adults-qty" name="date-form-adults-qty" value="2">
+          </p>
+          <p class="date-form-chld">
+            <label for="date-form-chld-qty">
+              <b>Дети:</b>
+            </label>
+            <button class="button-info" type="button"> Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+            </button>
+            <input type="text" id="date-form-chld-qty" name="date-form-chld-qty" value="1">
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
+      </section> 
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="subscribe-email" class="visually-hidden">Ваш e-mail</label>
+            <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email">
+          <button class="button subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <h2 class="visually-hidden">Cоц.сети</h2>
+        <ul class="footer-list">
+          <li class="link">
+            <a class="vk-item" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li class="link">
+            <a class="telegram-item" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="link">
+            <a class="youtube-item" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Телефон</h2>
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Сайт</h2>
+        <p class="html academy"><a><img src="" alt=".html academy"></a></p>
+      </section>
+    </footer>
   </body>
 </html>
