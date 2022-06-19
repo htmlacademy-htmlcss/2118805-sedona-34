@@ -22,13 +22,38 @@ body {
 .button {
     padding: 16px 45px;
     border: none;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #756157;
     text-decoration: none;
+    border-radius: 4px;
+}
+.button-add-to-favorite {
+    background-color: #82B3D3;
+}
+.button-in-favorite {
+    background-color: #7DB54F;
+}
+.button-real-page {
+    background-color: #F2F2F2;
+    color:#000000;
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 11.36px 24.55px 12.64px 23.45px;
+    border-radius: 4px;
+}
+.button-anouther-page {
+    background-color: #82B3D3;
+    color:#ffffff;
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 11.36px 24.55px 12.64px 23.45px;
     border-radius: 4px;
 }
 .page-header {
@@ -47,6 +72,8 @@ body {
 }
 .navigation-link-catalog {
     text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
 }
 .main-title-index {
     color: #000000;
@@ -55,12 +82,6 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
-/* .index-mask{
-    background-image: url("/images/logo_mask.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: bottom;
-} */
 .welcome-logo {
     display: block;
     margin: 0 auto;
@@ -130,17 +151,15 @@ body {
 }
 .visually-hidden {
     display: none;
-  }
-.contacts-phone {
-    color:#000000
 }
-/* .html academy {
-    background-image: url("/images/HTML_Academy.svg");
-} */
+.contacts-phone {
+    color:#000000;
+    font-size: 40px;
+    line-height: 40px;
+}
 .sedona-hotels {
     color: #ffffff;
     background-color: #000000;
-    background-image: url("/images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-image: url("/images/catalog-background.jpg");
@@ -149,7 +168,7 @@ body {
     font-size: 30px;
     line-height: 36px;
 }
-.hotel-card-title {
+.hotel-card-title  {
     font-size: 24px;
     line-height: 28px;
     text-align: left;
@@ -157,15 +176,134 @@ body {
     font-weight: 700;
     text-decoration: none;
 }
-.rating {
+.hotel-card-link
+{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navigation-item {
+    list-style: none;
+}
+.advantages-item {
+    list-style: none;
+}
+.link {
+    list-style: none;
+}
+.hotel-card {
+    list-style: none;
+}
+.hotels-of-sedona {
+    font-size: 60px;
+    line-height: 78px;
+}
+hotel-link {
     font-size: 16px;
     line-height: 20px;
-    padding: 16px 45px;
-    border: none;
-    text-transform: uppercase;
-    color: #000000;
+}
+.hotel-properties {
+    font-size: 20px;
+    line-height: 26px;
+}
+.properties-reset {
+    font-size: 16px;
+    line-height: 20px;
+}
+pagination-link {
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+}
+/* Не убирает блок круги от списка */
+.hotel-search {
+    font-size: 20px;
+    line-height: 36px;
+}
+.blue-background {
+    background-color: #82B3D3;
+}
+.light-blue-background {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.little-home {
+    background-image: url("/images/home.svg");
+    background-repeat: no-repeat;
+}
+.food {
+    background-image: url("/images/food.svg");
+    background-repeat: no-repeat;
+}
+.souvenirs {
+    background-image: url("/images/souvenirs.svg");
+    background-repeat: no-repeat;
+}
+.date-title {
+    font-size: 30px;
+    line-height: 36px;
+}
+.form-date-in {
+    font-size: 20px;
+    line-height: 26px;
+}
+.form-date-out {
+    font-size: 20px;
+    line-height: 26px;
+}
+date-form-adults-qty{
+    font-size: 20px;
+    line-height: 26px;
+}
+date-form-children{
+    font-size: 20px;
+    line-height: 26px;
+}
+.submit-button-search {
+    font-size: 20px;
+    line-height: 36px;
+}
+.button-children-info {
+    font-size: 16px;
+    line-height: 21px;
+}
+.expired-date {
+    font-size: 16px;
+    line-height: 21px;
+}
+.available-free-rooms {
+    font-size: 16px;
+    line-height: 21px;
+}
+.button-real-page {
     background-color: #F2F2F2;
-    background-size: 140px 37px;
+    color:#000000;
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 11.36px 24.55px 12.64px 23.45px;
     border-radius: 4px;
 }
-/* не вышел блочок */
+.button-anouther-page {
+    background-color: #82B3D3;
+    color:#ffffff;
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 11.36px 24.55px 12.64px 23.45px;
+    border-radius: 4px;
+}
+.social-link-vk {
+    background-image: url("/images/Vk_icon.svg");
+    background-repeat: no-repeat;
+}
+.social-link-telegram {
+    background-image: url("/images/Telegram_icon.svg");
+    background-repeat: no-repeat;
+}
+.social-link-youtube {
+    background-image: url("/images/Youtube_icon.svg");
+    background-repeat: no-repeat;
+}
