@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #ffffff;
+}
+.button {
+    padding: 16px 45px;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #756157;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.button-add-to-favorite {
+    background-color: #82b3d3;
+}
+.button-in-favorite {
+    background-color: #7db54f;
+}
+.button-real-page {
+    background-color: #f2f2f2;
+    color:#000000;
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 11.36px 24.55px 12.64px 23.45px;
+    border-radius: 4px;
+}
+.button-anouther-page {
+    background-color: #82b3d3;
+    color:#ffffff;
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 11.36px 24.55px 12.64px 23.45px;
+    border-radius: 4px;
+}
+.page-header {
+    color: #000000;
+    background-color: #ffffff;
+}
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+}
+.navigation-link-catalog {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+}
+.main-title-index {
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url("/images/index-background.jpg"), url("/images/logo_mask.svg");
+    background-size: 100% auto;
+    background-position: center, bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+/* Маска не подключилась */
+.welcome-logo {
+    display: block;
+    margin: 0 auto;
+}
+.little-city {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+.motivation{
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+.advantages-description {
+    text-align: center;
+}
+.booking {
+    background-color: #ffffff;
+}
+.booking-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+.visit-date {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.hotel-search {
+    font-size: 20px;
+    line-height: 36px;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.subscribe {
+    color: #ffffff;
+    background-image: url("/images/subscribe_background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.subscribe-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+.subscribe-motivation {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.field {
+    display: block;
+    margin: 0 auto;
+}
+.subscribe-button {
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+}
+.visually-hidden {
+    visibility: hidden;
+}
+.contacts-phone {
+    color:#000000;
+    font-size: 40px;
+    line-height: 40px;
+}
+.sedona-hotels {
+    color: #ffffff;
+    background-color: #000000;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("/images/catalog-background.jpg");
+}
+.hotels-shown {
+    font-size: 30px;
+    line-height: 36px;
+}
+.hotel-card-title  {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+}
+.hotel-card-link
+{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navigation-item {
+    list-style: none;
+}
+.advantages-item {
+    list-style: none;
+}
+.link {
+    list-style: none;
+}
+.hotel-card {
+    list-style: none;
+}
+.hotels-of-sedona {
+    font-size: 60px;
+    line-height: 78px;
+}
+.hotel-link {
+    font-size: 16px;
+    line-height: 20px;
+}
+.hotel-properties {
+    font-size: 20px;
+    line-height: 26px;
+}
+.properties-reset {
+    font-size: 16px;
+    line-height: 20px;
+}
+.pagination-link {
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+}
+.hotel-search {
+    font-size: 20px;
+    line-height: 36px;
+}
+.blue-background {
+    background-color: #82b3d3;
+}
+.light-blue-background {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.little-home {
+    background-image: url("/images/home.svg");
+    background-repeat: no-repeat;
+}
+.food {
+    background-image: url("/images/food.svg");
+    background-repeat: no-repeat;
+}
+.souvenirs {
+    background-image: url("/images/souvenirs.svg");
+    background-repeat: no-repeat;
+}
+.date-title {
+    font-size: 30px;
+    line-height: 36px;
+}
+.form-date-in {
+    font-size: 20px;
+    line-height: 26px;
+}
+.form-date-out {
+    font-size: 20px;
+    line-height: 26px;
+}
+.date-form-adults-qty{
+    font-size: 20px;
+    line-height: 26px;
+}
+.date-form-children{
+    font-size: 20px;
+    line-height: 26px;
+}
+.submit-button-search {
+    font-size: 20px;
+    line-height: 36px;
+}
+.button-children-info {
+    font-size: 16px;
+    line-height: 21px;
+}
+.expired-date {
+    font-size: 16px;
+    line-height: 21px;
+}
+.available-free-rooms {
+    font-size: 16px;
+    line-height: 21px;
+}
+.button-real-page {
+    background-color: #f2f2f2;
+    color:#000000;
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 11.36px 24.55px 12.64px 23.45px;
+    border-radius: 4px;
+}
+.button-anouther-page {
+    background-color: #82b3d3;
+    color:#ffffff;
+    list-style: none;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 11.36px 24.55px 12.64px 23.45px;
+    border-radius: 4px;
+}
+.social-link-vk {
+    background-image: url("/images/Vk_icon.svg");
+    background-repeat: no-repeat;
+}
+.social-link-telegram {
+    background-image: url("/images/Telegram_icon.svg");
+    background-repeat: no-repeat;
+}
+.social-link-youtube {
+    background-image: url("/images/Youtube_icon.svg");
+    background-repeat: no-repeat;
+}
+/* Не вышло: 1. задать размер пагинации на странице каталога;
+2. ссылки на соц сети не функционируют;
+3. так и не получилось с наложением маски, подключаю в том же css блоке, фоновое изображение становится все белым. */
