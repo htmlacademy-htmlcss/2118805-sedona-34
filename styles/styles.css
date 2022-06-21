@@ -33,13 +33,13 @@ body {
     border-radius: 4px;
 }
 .button-add-to-favorite {
-    background-color: #82B3D3;
+    background-color: #82b3d3;
 }
 .button-in-favorite {
-    background-color: #7DB54F;
+    background-color: #7db54f;
 }
 .button-real-page {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     color:#000000;
     list-style: none;
     font-size: 20px;
@@ -48,7 +48,7 @@ body {
     border-radius: 4px;
 }
 .button-anouther-page {
-    background-color: #82B3D3;
+    background-color: #82b3d3;
     color:#ffffff;
     list-style: none;
     font-size: 20px;
@@ -78,9 +78,10 @@ body {
 .main-title-index {
     color: #000000;
     background-color: #ffffff;
-    background-image: url("/images/index-background.jpg");
+    background-image: url("/images/index-background.jpg"), url("/images/logo_mask.svg");
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-position: center, bottom;
+    background-repeat: no-repeat, no-repeat;
 }
 .welcome-logo {
     display: block;
@@ -150,7 +151,7 @@ body {
     margin: 0 auto;
 }
 .visually-hidden {
-    display: none;
+    visibility: hidden;
 }
 .contacts-phone {
     color:#000000;
@@ -201,7 +202,7 @@ body {
     font-size: 60px;
     line-height: 78px;
 }
-hotel-link {
+.hotel-link {
     font-size: 16px;
     line-height: 20px;
 }
@@ -213,18 +214,17 @@ hotel-link {
     font-size: 16px;
     line-height: 20px;
 }
-pagination-link {
+.pagination-link {
     list-style: none;
     font-size: 20px;
     line-height: 36px;
 }
-/* Не убирает блок круги от списка */
 .hotel-search {
     font-size: 20px;
     line-height: 36px;
 }
 .blue-background {
-    background-color: #82B3D3;
+    background-color: #82b3d3;
 }
 .light-blue-background {
     background-color: rgba(131, 179, 211, 0.12);
@@ -253,11 +253,11 @@ pagination-link {
     font-size: 20px;
     line-height: 26px;
 }
-date-form-adults-qty{
+.date-form-adults-qty{
     font-size: 20px;
     line-height: 26px;
 }
-date-form-children{
+.date-form-children{
     font-size: 20px;
     line-height: 26px;
 }
@@ -278,7 +278,7 @@ date-form-children{
     line-height: 21px;
 }
 .button-real-page {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     color:#000000;
     list-style: none;
     font-size: 20px;
@@ -287,7 +287,7 @@ date-form-children{
     border-radius: 4px;
 }
 .button-anouther-page {
-    background-color: #82B3D3;
+    background-color: #82b3d3;
     color:#ffffff;
     list-style: none;
     font-size: 20px;
