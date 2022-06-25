@@ -55,49 +55,50 @@
             </li>
           </ul>
           <form class="hotel-properties" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="hotels-choose-container">
-              <ul>
-                <li class="hotel-properties">Инфраструктура:</li>
-                  <ul>
-                    <li>
-                      <label class="check-pick"> <input type="checkbox" name="hotel-inf" value="sw_pool" checked>
-                        Бассейн</label>
-                    </li>
-                    <li>
-                      <label class="check-pick"> <input type="checkbox" name="hotel-inf" value="parking" checked>
-                        Парковка</label>
-                    </li>
-                    <li>
-                      <label class="check-pick"> <input type="checkbox" name="hotel-inf" value="wi-fi"> Wi-Fi</label>
-                    </li>
-                  </ul>
-                <li class="hotel-properties">Тип жилья:</li>
-                <fieldset>
-                  <ul>
-                    <li>
-                      <label class="radio-pick"> <input type="radio" name="hotel-type" value="hotel" checked>
-                        Гостиница</label>
-                    </li>
-                    <li>
-                      <label class="radio-pick"> <input type="radio" name="hotel-type" value="motel"> Мотель</label>
-                    </li>
-                    <li>
-                      <label class="radio-pick"> <input type="radio" name="hotel-type" value="apartment">
-                        Апартаменты</label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <li class="hotel-properties">Стоимость, ₽: </li>
-                <li> <label for="price-low">от:
-                    <input type="number" value="0" id="price-low" name="price-low" placeholder="от:"></label>
-                </li>
-                <li> <label for="price-up">от:
-                    <input type="number" value="0" id="price-up" name="price-up" placeholder="до:"></label>
-                </li>
+            <ul class="hotels-choose-container">
+              <li class="hotel-properties">Инфраструктура:
+                <ul>
+                  <li>
+                    <label class="check-pick"> <input type="checkbox" name="hotel-inf" value="sw_pool" checked>
+                      Бассейн</label>
+                  </li>
+                  <li>
+                    <label class="check-pick"> <input type="checkbox" name="hotel-inf" value="parking" checked>
+                      Парковка</label>
+                  </li>
+                  <li>
+                    <label class="check-pick"> <input type="checkbox" name="hotel-inf" value="wi-fi"> Wi-Fi</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="hotel-properties">Тип жилья:</li>
+              <fieldset>
+                <ul>
+                  <li>
+                    <label class="radio-pick"> <input type="radio" name="hotel-type" value="hotel" checked>
+                      Гостиница</label>
+                  </li>
+                  <li>
+                    <label class="radio-pick"> <input type="radio" name="hotel-type" value="motel"> Мотель</label>
+                  </li>
+                  <li>
+                    <label class="radio-pick"> <input type="radio" name="hotel-type" value="apartment">
+                      Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <li class="hotel-properties">Стоимость, ₽: </li>
+              <li> <label for="price-low">от:
+                  <input type="number" value="0" id="price-low" name="price-low" placeholder="от:"></label>
+              </li>
+              <li> <label for="price-up">от:
+                  <input type="number" value="0" id="price-up" name="price-up" placeholder="до:"></label>
+              </li>
+              <div class="button-apply-position">
                 <button class="button properties-apply" type="submit">Применить</button>
                 <button class="button properties-reset" type="reset">Сбросить</button>
-              </ul>
-            </div>
+              </div>
+            </ul>
           </form>
         </section>
         <p class="hotels-shown"><b>Найдено гостиниц: 38</b></p>
@@ -129,7 +130,7 @@
               <button class="button button-add-to-favorite" type="submit">
                 В избранное
               </button>
-              <img class="stars" src="" alt="hotel stars">
+              <img class="stars" src="images/stars_x4.svg" alt="hotel stars">
               <span class="visually-hidden">4 звезды</span>
               <p class="rating">Рейтинг: 8,5</p>
             </li>
@@ -145,7 +146,7 @@
               <button class="button button-in-favorite" type="submit">
                 В избранном
               </button>
-              <img class="stars" src="" alt="hotel stars">
+              <img class="stars" src="images/stars_x4.svg" alt="hotel stars">
               <span class="visually-hidden">4 звезды</span>
               <p class="rating">Рейтинг: 9,2</p>
             </li>
@@ -161,7 +162,7 @@
               <button class="button button-add-to-favorite" type="submit">
                 В избранное
               </button>
-              <img class="stars" src="" alt="hotel stars">
+              <img class="stars" src="images/stars_x3.svg" alt="hotel stars">
               <span class="visually-hidden">3 звезды</span>
               <p class="rating">Рейтинг: 6,9</p>
             </li>
@@ -177,7 +178,7 @@
               <button class="button button-add-to-favorite" type="submit">
                 В избранное
               </button>
-              <img class="stars" src="" alt="hotel stars">
+              <img class="stars" src="images/stars_x2.svg" alt="hotel stars">
               <span class="visually-hidden">2 звезды</span>
               <p class="rating">Рейтинг: 5,0</p>
             </li>
@@ -207,7 +208,7 @@
               </li>
             </div>
           </ul>
-          <div>
+          <div class="site-hotels-shown">
             <span class="site-hotels-qty">Гостиниц на сайте</span>
             <select class="select-qty" value="4" aria-label="Количество">
               <option value="4">4</option>
