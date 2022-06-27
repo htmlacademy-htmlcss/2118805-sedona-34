@@ -28,12 +28,12 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-like" href="#">
                 <span class="visually-hidden">Мне нравится
                 </span>
                 <span class="favorite">12</span></a>
@@ -72,8 +72,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="hotel-properties">Тип жилья:</li>
-              <fieldset>
+              <li class="hotel-properties">Тип жилья:
                 <ul>
                   <li>
                     <label class="radio-pick"> <input type="radio" name="hotel-type" value="hotel" checked>
@@ -87,7 +86,7 @@
                       Апартаменты</label>
                   </li>
                 </ul>
-              </fieldset>
+              </li>
               <li class="hotel-properties">Стоимость, ₽: </li>
               <li> <label for="price-low">от:
                   <input type="number" value="0" id="price-low" name="price-low" placeholder="от:"></label>
@@ -95,28 +94,34 @@
               <li> <label for="price-up">от:
                   <input type="number" value="0" id="price-up" name="price-up" placeholder="до:"></label>
               </li>
-              <div class="button-apply-position">
-                <button class="button properties-apply" type="submit">Применить</button>
-                <button class="button properties-reset" type="reset">Сбросить</button>
-              </div>
+              <li>
+                <div class="button-apply-position">
+                  <button class="button properties-apply" type="submit">Применить</button>
+                  <button class="button properties-reset" type="reset">Сбросить</button>
+                </div>
+              </li>
             </ul>
           </form>
         </section>
-        <p class="hotels-shown"><b>Найдено гостиниц: 38</b></p>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="expensive">Сначала дорогое</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="popular">Сначала популярное</option>
-        </select>
-        <a class="button-table" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button-slideshow" href="#">
-          <span class="visually-hidden">Показать страницами</span>
-        </a>
-        <a class="button-list" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="hotels-shown-list">
+          <p class="hotels-shown"><b>Найдено гостиниц: 38</b></p>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="expensive">Сначала дорогие</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <div class="chose-show-type">
+            <a class="button-table" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button-slideshow" href="#">
+              <span class="visually-hidden">Показать страницами</span>
+            </a>
+            <a class="button-list" href="#">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
+        </div>
         <div class="hotel-list-container">
           <ul class="hotel-list">
             <li class="hotel-card">
@@ -187,31 +192,29 @@
         </div>
         <h3 class="visually-hidden">Пагинация</h3>
         <div class="pagination-qty">
-          <ul class="pagination">
-            <div class="pavination-wrapper">
-              <li class="pagination-item">
-                <button class="button-real-page" type="submit">1</button>
-              </li>
-              <li class="pagination-item">
-                <button class="button-anouther-page" type="submit">2</button>
-              </li>
-              <li class="pagination-item">
-                <button class="button-anouther-page" type="submit">3</button>
-              </li>
-              <li class="pagination-item">
-                <button class="button-anouther-page" type="submit">4</button>
-              </li>
-              <li class="pagination-item">
-                <button class="button-anouther-page" type="submit">...</button>
-              </li>
-              <li class="pagination-item">
-                <button class="button-anouther-page" type="submit">10</button>
-              </li>
-            </div>
+          <ul class="pavination-wrapper">
+            <li class="pagination-item">
+              <button class="button-real-page" type="submit">1</button>
+            </li>
+            <li class="pagination-item">
+              <button class="button-anouther-page" type="submit">2</button>
+            </li>
+            <li class="pagination-item">
+              <button class="button-anouther-page" type="submit">3</button>
+            </li>
+            <li class="pagination-item">
+              <button class="button-anouther-page" type="submit">4</button>
+            </li>
+            <li class="pagination-item">
+              <button class="button-anouther-page" type="submit">...</button>
+            </li>
+            <li class="pagination-item">
+              <button class="button-anouther-page" type="submit">10</button>
+            </li>
           </ul>
           <div class="site-hotels-shown">
             <span class="site-hotels-qty">Гостиниц на сайте</span>
-            <select class="select-qty" value="4" aria-label="Количество">
+            <select class="select-qty" aria-label="Количество">
               <option value="4">4</option>
               <option value="5">5</option>
               <option value="6">6</option>
@@ -235,24 +238,22 @@
         <div class="footer-container">
           <section>
             <h2 class="visually-hidden">Cоц.сети</h2>
-            <ul class="footer-list">
-              <div class="social-link">
-                <li class="social-link-vk">
-                  <a class="vk-item" href="https://vk.com/htmlacademy">
-                    <span class="visually-hidden">VK</span>
-                  </a>
-                </li>
-                <li class="social-link-telegram">
-                  <a class="telegram-item" href="https://t.me/htmlacademy">
-                    <span class="visually-hidden">Telegram</span>
-                  </a>
-                </li>
-                <li class="social-link-youtube">
-                  <a class="youtube-item" href="https://www.youtube.com/user/htmlacademyru">
-                    <span class="visually-hidden">Youtube</span>
-                  </a>
-                </li>
-              </div>
+            <ul class="social-link">
+              <li class="social-link-vk">
+                <a class="vk-item" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </li>
+              <li class="social-link-telegram">
+                <a class="telegram-item" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+              <li class="social-link-youtube">
+                <a class="youtube-item" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
             </ul>
           </section>
           <section class="contacts">
