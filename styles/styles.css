@@ -39,6 +39,11 @@
     background-color: #7db54f;
 }
 
+.hotel-card-button {
+    width: 140px;
+    padding: 9px 15px 8px;
+}
+
 .button-real-page {
     background-color: #f2f2f2;
     color: #000000;
@@ -109,7 +114,7 @@
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
-    padding: 11.36px 24.55px 12.64px 23.45px;
+    padding: auto;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -857,8 +862,6 @@ overflow: hidden; */
     margin: 0;
     padding: 0;
 }
-
-
 
 .button-apply-position {
     display: flex;
