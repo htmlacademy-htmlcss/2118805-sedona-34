@@ -33,15 +33,16 @@
 
 .button-add-to-favorite {
     background-color: #82b3d3;
+    padding: 9px 11px 8px;
 }
 
 .button-in-favorite {
     background-color: #7db54f;
+    padding: 9px 10px 8px;
 }
 
 .hotel-card-button {
-    width: 140px;
-    padding: 9px 15px 8px;
+    padding: 9px 0 8px;
 }
 
 .button-real-page {
@@ -114,7 +115,7 @@
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
-    padding: auto;
+    padding: 0;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -269,6 +270,7 @@ body {
 }
 
 .main-title-index {
+    display: block;
     margin: 0;
     color: #000000;
     height: 480px;
@@ -392,7 +394,7 @@ body {
 }
 
 .advantages-item-discription,
-light-blue-background {
+.light-blue-background {
     justify-content: center;
 }
 
@@ -509,11 +511,13 @@ light-blue-background {
     width: 18px;
     height: 18px;
 }
+
 .telegram-item {
     display: block;
     width: 18px;
     height: 18px;
 }
+
 .youtube-item {
     display: block;
     width: 18px;
@@ -705,7 +709,12 @@ overflow: hidden; */
     border-radius: 4px;
     margin-left: 8px;
 }
+
 /* Отели */
+
+.hotel-list-container {
+    margin: 0 72px;
+}
 
 .hotel-card-title {
     font-size: 24px;
@@ -714,6 +723,8 @@ overflow: hidden; */
     color: #000000;
     font-weight: 700;
     text-decoration: none;
+    margin: 0;
+    margin-top: 18px;
 }
 
 .hotel-card-link {
@@ -726,13 +737,10 @@ overflow: hidden; */
 }
 
 .hotel-list {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 18px;
     padding: 0;
-    margin-left: 18px;
-    flex-wrap: wrap;
 }
 
 .hotel-card {
@@ -786,6 +794,37 @@ overflow: hidden; */
 
 .hotel-card {
     list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-list-description {
+    display: flex;
+    margin-top: 18px;
+}
+
+.hotel-list-elements {
+    width: 140px;
+    margin: 0;
+}
+
+.hotel-list-elements:not(:last-child) {
+    margin-right: 20px;
+}
+
+.rating {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding: 9px 17px 8px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.hotel-card-image {
+    display: block;
 }
 
 .hotels-of-sedona {
@@ -832,7 +871,8 @@ overflow: hidden; */
     padding: 0;
 }
 
-.check-pick, .radio-pick {
+.check-pick,
+.radio-pick {
     font-size: 18px;
     line-height: 21px;
 }
@@ -915,8 +955,3 @@ overflow: hidden; */
     border: 2px solid #e5e5e5;
     border-radius: 4px;
 }
-
-
-
-
-/* Не могу понять почему у меня текст шире, чем в макете */
