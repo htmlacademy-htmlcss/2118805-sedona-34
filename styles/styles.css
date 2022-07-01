@@ -955,3 +955,11 @@ overflow: hidden; */
     border: 2px solid #e5e5e5;
     border-radius: 4px;
 }
+
+/* Модальное */
+
+.modal-conatainer {
+    width: 715px;
+    margin: auto;
+    border-radius: 30px;
+}
