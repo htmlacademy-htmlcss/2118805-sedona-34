@@ -37,6 +37,7 @@
 
 .button:focus {
     background-color: #615048;
+    outline: 0;
 }
 
 .button:active {
@@ -59,6 +60,7 @@
 
 .button-add-to-favorite:focus {
     background-color: #68a2ca;
+    outline: 0;
 }
 
 .button-add-to-favorite:active {
@@ -80,6 +82,7 @@
 
 .button-in-favorite:focus {
     background-color: #6c9e42;
+    outline: 0;
 }
 
 .button-in-favorite:active {
@@ -106,6 +109,7 @@
     border-radius: 4px;
     pointer-events: none;
     cursor: pointer;
+    outline: 0;
 }
 
 
@@ -130,6 +134,7 @@
 
 .button-anouther-page:focus {
     background-color: #82b3d3;
+    outline: 0;
 }
 
 .button-anouther-page:active {
@@ -202,6 +207,7 @@
 
 .subscribe-button:focus {
     background-color: #68a2ca;
+    outline: 0;
 }
 
 .subscribe-button:active {
@@ -612,6 +618,7 @@ body {
 
 .social-link-color:focus {
     fill: #68A2CA;
+    outline: 0;
 }
 
 .social-link-color:active {
@@ -682,6 +689,7 @@ body {
 
 .contacts-phone:focus {
     color: #756157;
+    outline: 0;
 }
 
 .contacts-phone:active {
@@ -699,6 +707,7 @@ body {
 
 .htmlacademy-link:focus .htmlacademy-svg {
     color: #756157;
+    outline: 0;
 }
 
 .htmlacademy-link:active .htmlacademy-svg {
@@ -819,6 +828,24 @@ body {
     background-image: url(/images/variant_arrow.svg);
     background-repeat: no-repeat;
     background-position: 256px 19px;
+}
+
+.select-control:hover {
+    border-color: #68a2ca;
+}
+
+.select-control:focus {
+    border-color: #68a2ca;
+    outline: 0;
+}
+
+.select-control:active {
+    border-color: #3f5e72;
+}
+
+.select-control:disabled {
+    color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.3)
 }
 
 .hotels-shown {
@@ -977,6 +1004,7 @@ body {
 
 .home-link:focus {
     fill: white;
+    outline: 0;
 }
 
 .home-link:active {
@@ -1068,6 +1096,7 @@ body {
 
 .hotel-link:focus {
     color: white;
+    outline: 0;
 }
 
 .hotel-link:active {
@@ -1098,7 +1127,7 @@ body {
 .hotel-properties-type-home {
     margin-left: 70px;
     padding: 0;
-    min-width: 145px;
+    min-width: 155px;
 }
 
 .hotel-properties-type {
@@ -1174,6 +1203,7 @@ body {
 
 .properties-apply:focus {
     background-color: #68a2ca;
+    outline: 0;
 }
 
 .properties-apply:active {
@@ -1245,3 +1275,74 @@ body {
     border-radius: 30px;
     display: none;
 }
+
+
+/*
+.range-scale {
+    position: relative;
+    height: 4px;
+    margin-bottom: 16px;
+    background-color: #242424;
+    border-radius: 2px;
+  }
+
+  .range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #af7842;
+  }
+
+  .range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #242424;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .range-toggle:hover {
+    background-color: #dbb590;
+  }
+
+  .range-toggle:active,
+  .range-toggle:focus {
+    outline: 3px solid #dbb590;
+  }
+
+  .toggle-min {
+    top: -8px;
+    left: -10px;
+  }
+
+  .toggle-max {
+    top: -8px;
+    right: -10px;
+  }
+
+  .range-wrapper-inputs {
+           display: flex;
+           justify-content: center;
+         }
+
+  .catalog-filter-label {
+    display: flex;
+    margin-right: 5px;
+  }
+
+  .range-input {
+    width: 30px;
+    padding: 0 2px;
+    font: inherit;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    appearance: textfield;
+  }
+
+  .range-input::-webkit-outer-spin-button,
+  .range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  } */
