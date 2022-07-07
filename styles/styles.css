@@ -3,7 +3,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -11,7 +11,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -31,14 +31,63 @@
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: #615048;
+}
+
+.button:focus {
+    background-color: #615048;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.3);
+
+}
+
+.button:disabled {
+    background-color: #e5e5e5;
+}
+
 .button-add-to-favorite {
     background-color: #82b3d3;
     padding: 9px 11px 8px;
 }
 
+.button-add-to-favorite:hover {
+    background-color: #68a2ca;
+}
+
+.button-add-to-favorite:focus {
+    background-color: #68a2ca;
+}
+
+.button-add-to-favorite:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-add-to-favorite:disabled {
+    background-color: #e5e5e5;
+}
+
 .button-in-favorite {
     background-color: #7db54f;
     padding: 9px 10px 8px;
+}
+
+.button-in-favorite:hover {
+    background-color: #6c9e42;
+}
+
+.button-in-favorite:focus {
+    background-color: #6c9e42;
+}
+
+.button-in-favorite:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-in-favorite:disabled {
+    background-color: #e5e5e5;
 }
 
 .hotel-card-button {
@@ -55,8 +104,11 @@
     height: 60px;
     border: none;
     border-radius: 4px;
+    pointer-events: none;
     cursor: pointer;
 }
+
+
 
 .button-anouther-page {
     background-color: #82b3d3;
@@ -70,6 +122,20 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+.button-anouther-page:hover {
+    background-color: #68a2ca;
+    border: 1px solid #82b3d3;
+}
+
+.button-anouther-page:focus {
+    background-color: #82b3d3;
+}
+
+.button-anouther-page:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 
 .submit-button-search {
     font-size: 20px;
@@ -130,6 +196,22 @@
     cursor: pointer;
 }
 
+.subscribe-button:hover {
+    background-color: #68a2ca;
+}
+
+.subscribe-button:focus {
+    background-color: #68a2ca;
+}
+
+.subscribe-button:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled {
+    background-color: #e5e5e5;
+}
+
 /* страницы */
 
 html {
@@ -172,6 +254,7 @@ body {
 
 .navigation-logo {
     margin-bottom: -10px;
+    z-index: 2;
 }
 
 .navigation-list {
@@ -196,10 +279,26 @@ body {
     text-decoration: none;
 }
 
+
+.navigation-list li {
+    position: relative;
+}
+
+.navigation-link-current::before {
+    position: absolute;
+    right: 17px;
+    bottom: 0;
+    left: 17px;
+    height: 2px;
+    background-color: #756257;
+    content: "";
+}
+
 .navigation-link-user {
     display: block;
-    width: 18px;
+    width: 42px;
     height: 18px;
+    padding: 24px 0;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -234,27 +333,32 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 0;
-    width: 18px;
-    height: 18px;
-    padding: 12px 12px;
+    width: 42px;
 }
 
 .navigation-item-like {
+    position: relative;
     background-image: url("/images/favorite.svg");
     background-position: center;
     background-repeat: no-repeat;
     margin-left: 0;
-    width: 18px;
-    height: 18px;
-    padding: 12px 12px;
+    width: 42px;
 }
 
 .favorite {
+    position: absolute;
+    left: 24px;
+    top: 15px;
+    font-weight: 400;
     color: #ffffff;
     background-color: #7db54f;
-    border-radius: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
     font-size: 10px;
     line-height: 13px;
+    padding: 2.5px 0.5px 4.5px;
 }
 
 .navigation-link-catalog {
@@ -341,7 +445,9 @@ body {
 .advantages-item-offers {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     width: 400px;
+    padding-bottom: 50px;
 }
 
 .advantages-picture {
@@ -376,8 +482,6 @@ body {
     margin-bottom: 56px;
 }
 
-/* Не понимаю, по шрифту с кнопкой ниже все одинаково с макетом, кнопка размера такого же. А визуально немного отличается от макета, кнопка "поиск гостиницы в Седоне" как будто уже текста выше, относительно этих же элементов на макете  */
-
 .blue-background {
     background-color: #82b3d3;
     color: #ffffff;
@@ -391,13 +495,12 @@ body {
     background-color: rgba(131, 179, 211, 0.12);
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
-.advantages-item-discription,
-.light-blue-background {
+.advantages-item-discription.light-blue-background {
     justify-content: center;
 }
-
 
 .midl-blue-background {
     background-color: rgba(131, 179, 211, 0.2);
@@ -409,24 +512,21 @@ body {
 .little-home {
     background-image: url("/images/home.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 182px;
+    background-position: 163px 80px;
     margin-bottom: 0;
 }
 
 .food {
     background-image: url("/images/food.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 182px;
+    background-position: 163px 81px;
     margin-bottom: 0;
 }
 
 .souvenirs {
     background-image: url("/images/souvenirs.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 182px;
+    background-position: 168px 78px;
     margin-bottom: 0;
 }
 
@@ -481,12 +581,45 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 188px;
+    height: 40px;
     margin: 45px 42px 35px 0;
     list-style: none;
     padding: 0;
 }
 
-.social-link-vk {
+.social-link-vk,
+.social-link-telegram,
+.social-link-youtube {
+    width: 47.33px;
+    height: 40px;
+    position: relative;
+}
+
+.social-link-color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill:#83B3D3;
+}
+
+
+.social-link-color:hover {
+    fill: #68A2CA;
+}
+
+.social-link-color:focus {
+    fill: #68A2CA;
+}
+
+.social-link-color:active {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
+/* Старый вариант вставки изображений */
+/* .social-link-vk {
     background-image: url("/images/Vk_icon.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -494,45 +627,47 @@ body {
     width: 24px;
     height: 14px;
     margin-left: 0;
-}
+} */
 
-.social-link-telegram {
+/* .social-link-telegram {
     background-image: url("/images/Telegram_icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    padding: 12px 15px;
+    padding: 12.5px 15px;
     width: 18px;
     height: 15px;
     margin-left: 0;
-}
+} */
 
-.vk-item {
-    display: block;
-    width: 18px;
-    height: 18px;
-}
-
-.telegram-item {
-    display: block;
-    width: 18px;
-    height: 18px;
-}
-
-.youtube-item {
-    display: block;
-    width: 18px;
-    height: 18px;
-}
-
-
-.social-link-youtube {
+/* .social-link-youtube {
     background-image: url("/images/Youtube_icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    padding: 12px 13px;
+    padding: 11.5px 13px;
     width: 22px;
     height: 17px;
     margin-left: 0;
+} */
+
+.vk-link {
+    display: block;
+    padding: 13px 12px;
+    width: 24px;
+    height: 18px;
+}
+
+.telegram-link {
+    display: block;
+    padding: 12.5px 15px;
+    width: 18px;
+    height: 18px;
+}
+
+.youtube-link {
+    display: block;
+    padding: 11.5px 13px;
+    width: 22px;
+    height: 18px;
 }
 
 .contacts {
@@ -541,9 +676,33 @@ body {
     margin: 45px 0 35px 0;
 }
 
+.contacts-phone:hover {
+    color: #756157;
+}
+
+.contacts-phone:focus {
+    color: #756157;
+}
+
+.contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
 .html-academy {
     width: 115px;
     margin: 49px 0 38px 42px;
+}
+
+.htmlacademy-link:hover .htmlacademy-svg {
+    fill: #756157;
+}
+
+.htmlacademy-link:focus .htmlacademy-svg {
+    color: #756157;
+}
+
+.htmlacademy-link:active .htmlacademy-svg {
+    color: rgba(117, 97, 87, 0.3);
 }
 
 /* footer */
@@ -606,27 +765,23 @@ body {
 .field {
     display: block;
     margin: 0;
-    padding: 0;
     width: 600px;
     border-radius: 10px 0 0 10px;
+    padding: 20px 491px 19px 22px;
     border: 0;
     background-color: #f2f2f2;
 }
 
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-
-/*  пропадают иконки соц сетей при добавлении этого
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-padding: 0;
-border: 0;
-clip: rect(0 0 0 0);
-overflow: hidden; */
-
 
 .contacts-phone {
     color: #000000;
@@ -660,6 +815,10 @@ overflow: hidden; */
     width: 290px;
     border: 2px solid #e5e5e5;
     border-radius: 4px;
+    appearance: none;
+    background-image: url(/images/variant_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 256px 19px;
 }
 
 .hotels-shown {
@@ -677,20 +836,37 @@ overflow: hidden; */
 .button-table {
     display: block;
     background-image: url("/images/icon-table.svg");
-    background-size: 16px 14px;
     background-repeat: no-repeat;
+    background-position: 14px 15px;
     width: 44px;
     height: 44px;
-    border: 2px solid #000000;
+    border: 2px solid #e5e5e5;
     border-radius: 4px;
     margin-left: auto;
+}
+
+.current-view {
+    border: 2px solid #000000;
+}
+
+.button-table:hover {
+    border: 2px solid #000000;
+}
+
+.button-table:focus {
+    border: 2px solid #68a2ca;
+    outline: 0;
+}
+
+.button-table:active {
+    border: 2px solid #000000;
 }
 
 .button-slideshow {
     display: block;
     background-image: url("/images/icon-slideshow.svg");
-    background-size: 16px 14px;
     background-repeat: no-repeat;
+    background-position: 14px 15px;
     width: 44px;
     height: 44px;
     border: 2px solid #e5e5e5;
@@ -698,22 +874,50 @@ overflow: hidden; */
     margin-left: 8px;
 }
 
+.button-slideshow:hover {
+    border: 2px solid #000000;
+}
+
+.button-slideshow:focus {
+    border: 2px solid #68a2ca;
+    outline: 0;
+}
+
+.button-slideshow:active {
+    border: 2px solid #000000;
+}
+
 .button-list {
     display: block;
     background-image: url("/images/icon-list.svg");
-    background-size: 16px 14px;
     background-repeat: no-repeat;
+    background-position: 14px 15px;
     width: 44px;
     height: 44px;
     border: 2px solid #e5e5e5;
     border-radius: 4px;
     margin-left: 8px;
+}
+
+.button-list:hover {
+    border: 2px solid #000000;
+}
+
+.button-list:focus {
+    border: 2px solid #68a2ca;
+    outline: 0;
+}
+
+.button-list:active {
+    border: 2px solid #000000;
 }
 
 /* Отели */
 
 .hotel-list-container {
     margin: 0 72px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 66px;
 }
 
 .hotel-card-title {
@@ -741,6 +945,7 @@ overflow: hidden; */
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0 18px;
     padding: 0;
+    margin: 0;
 }
 
 .hotel-card {
@@ -753,6 +958,10 @@ overflow: hidden; */
 }
 
 .home-link {
+    fill: white;
+}
+
+/* .home-link {
     display: block;
     background-image: url("/images/main_icon.svg");
     background-size: 100% auto;
@@ -760,6 +969,18 @@ overflow: hidden; */
     background-repeat: no-repeat;
     width: 12px;
     height: 12px;
+} */
+
+.home-link:hover {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.home-link:focus {
+    fill: white;
+}
+
+.home-link:active {
+    fill: rgba(255, 255, 255, 0.3);
 }
 
 .arrow {
@@ -782,6 +1003,7 @@ overflow: hidden; */
     list-style: none;
     margin-left: 0;
     margin-top: 10px;
+    margin-bottom: 0;
     padding: 0;
     text-decoration: none;
     width: 112px;
@@ -840,6 +1062,19 @@ overflow: hidden; */
     text-decoration: none;
 }
 
+.hotel-link:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.hotel-link:focus {
+    color: white;
+}
+
+.hotel-link:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
 .hotels-choose-container {
     padding: 0;
     margin: 40px 0 0 0;
@@ -873,8 +1108,10 @@ overflow: hidden; */
 
 .check-pick,
 .radio-pick {
+    position: relative;
     font-size: 18px;
     line-height: 21px;
+    height: 21px;
 }
 
 .check-pick:not(:last-child) {
@@ -885,6 +1122,23 @@ overflow: hidden; */
 .radio-pick:not(:last-child) {
     margin-bottom: 15px;
     padding: 0;
+}
+
+.checkbox-size {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin: 3px 0;
+    margin-right: 19px;
+}
+
+.radio-pick-size {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 3px 0;
+    margin-right: 19px;
 }
 
 .list-style-none {
@@ -914,16 +1168,39 @@ overflow: hidden; */
     width: 160px;
 }
 
+.properties-apply:hover {
+    background-color: #68a2ca;
+}
+
+.properties-apply:focus {
+    background-color: #68a2ca;
+}
+
+.properties-apply:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.properties-apply:disabled {
+    background-color: #e5e5e5;
+}
+
 .properties-reset {
-    background: none;
+    border: none;
     font-size: 16px;
     line-height: 20px;
-    text-transform: none;
+    font-weight: 700;
+    padding: 9px 15px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
 }
 
 .pagination-qty {
     display: flex;
-    padding: 96px 71px 25px 73px;
+    padding: 30px 71px 25px 73px;
     margin: 0 auto;
 }
 
@@ -938,7 +1215,7 @@ overflow: hidden; */
 }
 
 .pagination-item {
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .site-hotels-shown {
@@ -954,6 +1231,10 @@ overflow: hidden; */
     padding: 14px 20px;
     border: 2px solid #e5e5e5;
     border-radius: 4px;
+    appearance: none;
+    background-image: url(/images/variant_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 126px 19px;
 }
 
 /* Модальное */
@@ -962,4 +1243,5 @@ overflow: hidden; */
     width: 715px;
     margin: auto;
     border-radius: 30px;
+    display: none;
 }
