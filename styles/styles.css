@@ -410,6 +410,8 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     outline: none;
+    width: 160px;
+    height: 37px;
 }
 
 .navigation-item-catalog {
