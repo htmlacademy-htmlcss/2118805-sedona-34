@@ -3,7 +3,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -11,7 +11,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -433,7 +433,7 @@ body {
     color: #000000;
     height: 485px;
     background-color: #ffffff;
-    background-image: url("/images/logo_mask.svg"), url("/images/index-background.jpg");
+    background-image: url("../images/logo_mask.svg"), url("../images/index-background.jpg");
     background-size: 100% auto;
     background-position: bottom, center;
     background-repeat: no-repeat, no-repeat;
@@ -586,21 +586,21 @@ body {
 }
 
 .little-home {
-    background-image: url("/images/home.svg");
+    background-image: url("../images/home.svg");
     background-repeat: no-repeat;
     background-position: 163px 80px;
     margin-bottom: 0;
 }
 
 .food {
-    background-image: url("/images/food.svg");
+    background-image: url("../images/food.svg");
     background-repeat: no-repeat;
     background-position: 163px 81px;
     margin-bottom: 0;
 }
 
 .souvenirs {
-    background-image: url("/images/souvenirs.svg");
+    background-image: url("../images/souvenirs.svg");
     background-repeat: no-repeat;
     background-position: 168px 78px;
     margin-bottom: 0;
@@ -801,7 +801,7 @@ body {
     flex-direction: column;
     width: 1200px;
     color: #ffffff;
-    background-image: url("/images/subscribe_background.jpg");
+    background-image: url("../images/subscribe_background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -879,7 +879,7 @@ body {
     color: #ffffff;
     padding: 35px 70px 70px;
     background-color: #000000;
-    background-image: url("/images/catalog-background.jpg");
+    background-image: url("../images/catalog-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -903,7 +903,7 @@ body {
     border: 2px solid #e5e5e5;
     border-radius: 4px;
     appearance: none;
-    background-image: url("/images/variant_arrow.svg");
+    background-image: url("../images/variant_arrow.svg");
     background-repeat: no-repeat;
     background-position: 256px 21px;
 }
@@ -943,7 +943,7 @@ body {
 
 .button-table {
     display: block;
-    background-image: url("/images/icon-table.svg");
+    background-image: url("../images/icon-table.svg");
     background-repeat: no-repeat;
     background-position: 14px 15px;
     width: 44px;
@@ -972,7 +972,7 @@ body {
 
 .button-slideshow {
     display: block;
-    background-image: url("/images/icon-slideshow.svg");
+    background-image: url("../images/icon-slideshow.svg");
     background-repeat: no-repeat;
     background-position: 14px 15px;
     width: 44px;
@@ -997,7 +997,7 @@ body {
 
 .button-list {
     display: block;
-    background-image: url("/images/icon-list.svg");
+    background-image: url("../images/icon-list.svg");
     background-repeat: no-repeat;
     background-position: 14px 15px;
     width: 44px;
@@ -1078,7 +1078,7 @@ body {
 }
 
 .arrow {
-    background-image: url("/images/arrow.svg");
+    background-image: url("../images/arrow.svg");
     background-repeat: no-repeat;
     width: 5.2px;
     height: 8px;
@@ -1230,7 +1230,7 @@ body {
 }
 
 .checkbox-size[type="checkbox"]:checked + .control-mark {
-    background-image: url("/images/tick.svg");
+    background-image: url("../images/tick.svg");
     background-position: 4px 6px;
     background-repeat: no-repeat;
 }
@@ -1263,7 +1263,7 @@ body {
 }
 
 .radio-pick-size[type="radio"]:checked + .control-radio-mark {
-    background-image: url("/images/radio-point.svg");
+    background-image: url("../images/radio-point.svg");
     background-position: 5px 5px;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -1572,7 +1572,7 @@ body {
     border: 2px solid #e5e5e5;
     border-radius: 4px;
     appearance: none;
-    background-image: url("/images/variant_arrow.svg");
+    background-image: url("../images/variant_arrow.svg");
     background-repeat: no-repeat;
     background-position: 126px 18px;
 }
